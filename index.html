@@ -3,43 +3,84 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA=Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device=width, initial-scale=1.0">
-    <title>MDHC.PL - Logowanie</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MDHC.PL - Strona Główna</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
 
+    <header>
+        <h2 class ="logo">MDHC.PL</h2>
+        <nav class="navigation">
+            <a href="#">Strona główna</a>
+            <a href="#">Regulamin</a>
+            <a href="#">Sklep</a>
+            <a href="#">Kontakt</a>
+            <button class="btnLogin-popup">Zaloguj się</button>
+        </nav>
+    </header>
+
     <div class="wrapper">
-        <form action="">
-            <h1>MDHC.PL - Logowanie</h1>
-            
-            <div class="input-box">
-                <input type="text" placeholder="Nazwa użytkownika" required>
-                <i class='bx bxs-user'></i>
-            </div>
-            
-            <div class="input-box">
-                <input type="password" placeholder="Hasło" required>
-                <i class='bx bxs-lock-alt' ></i>
-            </div>
+        <span class="icon-close"><ion-icon name="close"></ion-icon></span>
 
-            <div class="remember-forgot">
-                <label><input type="checkbox"> Zapamiętaj logowanie</label>
-                <a href="#">Zapomniałeś hasła?</a>
+        <div class="form-box login">
+            <h2>Zaloguj się</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>E-Mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Hasło</label>
+                </div>
+                <div class="remember-forgot">
+                    <a href="#">Zapomniałeś hasła?</a>
+                </div>
+                <button type="sumbit" class="btn">Zaloguj się</button>
+                <div class="login-register">
+                    <p>Nie posiadasz konta? <a href="#" class="register-link">Zarejestruj się</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+
+        <div class="form-box register">
+            <h2>Zarejestruj się</h2>
+            <form action="#">
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="person"></ion-icon></span>
+                    <input type="email" required>
+                    <label>Nazwa użytkownika</label>
             </div>
-
-            <button type="submit" class="btn">Zaloguj się</button>
-
-            <div class="register-link">
-                <p>Nie posiadasz konta? <a href="#">Zarejestruj się</a></p>
-            </div>
-
-        </form>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                    <input type="email" required>
+                    <label>E-Mail</label>
+                </div>
+                <div class="input-box">
+                    <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+                    <input type="password" required>
+                    <label>Hasło</label>
+                </div>
+                <div class="remember-forgot">
+                </div>
+                <button type="sumbit" class="btn">Zarejestruj się</button>
+                <div class="login-register">
+                    <p>Posiadasz już konto? <a href="#" class="login-link">Zaloguj się</a>
+                    </p>
+                </div>
+            </form>
+        </div>
     </div>
-
+    
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>
